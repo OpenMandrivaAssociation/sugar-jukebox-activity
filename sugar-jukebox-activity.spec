@@ -10,9 +10,10 @@ Url: http://sugarlabs.org/
 
 Source: http://download.sugarlabs.org/sources/sucrose/fructose/Jukebox/Jukebox-6.tar.bz2
 
-Requires: sugar-toolkit >= 0.83.6
+Requires: sugar-toolkit >= 0.83.7
 
-BuildRequires: sugar-toolkit >= 0.83.6
+BuildRequires: sugar-toolkit >= 0.83.7
+BuildRequires: gst-plugins-pango  
 BuildRequires: gettext  
 
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
