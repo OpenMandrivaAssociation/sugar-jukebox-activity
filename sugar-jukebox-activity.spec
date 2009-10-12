@@ -11,11 +11,11 @@ Url: http://sugarlabs.org/
 
 Source: http://download.sugarlabs.org/sources/sucrose/fructose/Jukebox/Jukebox-11.tar.bz2
 
-Requires: sugar-toolkit >= 0.86.0
+Requires: sugar-toolkit >= 0.86.1
 
 BuildRequires: gettext  
 BuildRequires: gstreamer0.10-plugins-base  
-BuildRequires: sugar-toolkit >= 0.86.0
+BuildRequires: sugar-toolkit >= 0.86.1
 
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch: noarch
