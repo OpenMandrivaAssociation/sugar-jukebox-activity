@@ -2,20 +2,20 @@
 #       See http://wiki.sugarlabs.org/go/Deployment_Team/jhconvert for details
 
 Name: sugar-jukebox-activity
-Version: 18
-Release: %mkrel 2
+Version: 32
+Release: 1
 Summary: Audio and video player for Sugar
 License: GPLv2
 Group: Graphical desktop/Other
 Url: http://sugarlabs.org/
 
-Source: http://download.sugarlabs.org/sources/sucrose/fructose/Jukebox/Jukebox-18.tar.bz2
+Source: http://download.sugarlabs.org/sources/sucrose/fructose/Jukebox/Jukebox-%{version}.tar.bz2
 
-Requires: sugar-toolkit >= 0.88.0
+Requires: sugar-toolkit-gtk3 >= 0.88.0
 
 BuildRequires: gettext  
-BuildRequires: gstreamer0.10-plugins-base  
-BuildRequires: sugar-toolkit >= 0.88.0
+BuildRequires: gstreamer1.0-plugins-base  
+BuildRequires: sugar-toolkit-gtk3 >= 0.88.0
 
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch: noarch
@@ -24,7 +24,7 @@ BuildArch: noarch
 Audio and video player for Sugar.
 
 %prep
-%setup -q -n Jukebox-18
+%setup -q -n Jukebox-%{version}
 
 
 %build
