@@ -3,7 +3,7 @@
 
 Name: sugar-jukebox-activity
 Version: 32
-Release: 1
+Release: 2
 Summary: Audio and video player for Sugar
 License: GPLv2
 Group: Graphical desktop/Other
