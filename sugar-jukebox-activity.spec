@@ -3,7 +3,7 @@
 
 Name: sugar-jukebox-activity
 Version: 32
-Release: 2
+Release: 3
 Summary: Audio and video player for Sugar
 License: GPLv2
 Group: Graphical desktop/Other
@@ -17,7 +17,6 @@ BuildRequires: gettext
 BuildRequires: gstreamer1.0-plugins-base  
 BuildRequires: sugar-toolkit-gtk3 >= 0.88.0
 
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch: noarch
 
 %description
@@ -30,19 +29,14 @@ Audio and video player for Sugar.
 %build
 
 rm -f MANIFEST
-python setup.py build
+python2 setup.py build
 
 %install
-rm -rf %{buildroot}
-python setup.py install --prefix=%{buildroot}/%{_prefix}
+python2 setup.py install --prefix=%{buildroot}/%{_prefix}
 find %{buildroot} -name '*.py.orig' -print0 | xargs -0 rm -f
 %find_lang org.laptop.sugar.Jukebox
 
-%clean
-rm -rf %{buildroot}
-
 %files -f org.laptop.sugar.Jukebox.lang
-%defattr(-,root,root,-)
 %{_datadir}/sugar/activities/*
 %doc AUTHORS COPYING NEWS TODO
 
