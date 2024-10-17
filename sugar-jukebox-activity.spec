@@ -7,7 +7,7 @@ Release: 3
 Summary: Audio and video player for Sugar
 License: GPLv2
 Group: Graphical desktop/Other
-Url: http://sugarlabs.org/
+Url: https://sugarlabs.org/
 
 Source: http://download.sugarlabs.org/sources/sucrose/fructose/Jukebox/Jukebox-%{version}.tar.bz2
 
